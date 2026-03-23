@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Blog | Insights & Stories</title>
+    <meta name="description" content="A modern blog featuring the latest in technology, design, and lifestyle.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Lumina.</a>
+            <ul class="nav-links">
+                <li><a href="#" class="active" data-category="all">Home</a></li>
+                <li><a href="#latest" data-category="Technology">Tech</a></li>
+                <li><a href="#latest" data-category="Design">Design</a></li>
+                <li><a href="#latest" data-category="Lifestyle">Lifestyle</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Featured</span>
+                <h1 class="hero-title">The Future of Digital Experiences</h1>
+                <p class="hero-subtitle">Exploring the intersection of design, technology, and human connection in the modern web era.</p>
+                <a href="#latest" class="btn btn-primary">Read Article</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Futuristic digital art">
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content" id="latest">
+        <div class="section-header">
+            <h2>Latest Stories</h2>
+            <div class="categories-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Technology">Technology</button>
+                <button class="filter-btn" data-filter="Design">Design</button>
+                <button class="filter-btn" data-filter="Coding">Coding</button>
+                <button class="filter-btn" data-filter="Lifestyle">Lifestyle</button>
+            </div>
+        </div>
+        
+        <div class="posts-grid" id="posts-grid">
+            <!-- Posts will be injected here by JS -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Lumina.</h3>
+                <p>Curated stories for the curious mind.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Categories</h4>
+                    <a href="#">Technology</a>
+                    <a href="#">Design</a>
+                    <a href="#">Lifestyle</a>
+                </div>
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Lumina Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
